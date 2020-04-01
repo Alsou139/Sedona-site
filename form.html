@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="build/css/style.css" rel="stylesheet">
+    <title>Седона</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="mobile-menu">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-list-item"><a href="index.html">Главная</a></li>
+                    <li class="mobile-menu-list-item"><a href="photo.html">Фото и видео</a></li>
+                    <li class="mobile-menu-list-item"><a href="form.html">Форма отзыва</a></li>
+                    <li class="mobile-menu-list-item"><a href="#">HTML Academy</a></li>
+                </ul>
+                <div class="mobile-header">
+                    <div class="mobile-header-nav">
+                        <div class="image-item">
+                            <img src="build/img/logotyle-mobile.svg" alt="logo">
+                        </div>
+                        <div class="header-burger">
+                            <span></span>
+                        </div>
+                        <div class="exit"></div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-header-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="photo.html">Фото и видео</a></li>
+                    <li><a href="index.html"><img src="build/img/Logo.png" alt="Logo"></a></li>
+                    <li><a href="form.html" class="active-item">Форма отзыва</a></li>
+                    <li><a href="#">HTML Academy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="form-main">
+        <div class="container">
+            <section class="bg">
+                    <div class="box">
+                        <img src="build/img/text-sedona.svg" alt="Sedona">
+                    </div>
+            </section>
+            <section class="form">
+                    <div class="form-container">
+                        <div class="form-box">
+                            <p class="title">Оставьте свой отзыв </p>
+                            <p class="text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+                        </div>
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="column">
+                                    <div class="form-item">
+                                        <h3>ВАше Общее впечатление:</h3>
+                                        <div class="radiobuttons">
+                                            <div class="radiobutton-item">
+                                                <input type="radio" name="assessment" value="positive" checked>
+                                                Скорее положительное
+                                            </div>
+                                            <div class="radiobutton-item">
+                                                <input type="radio" name="assessment" value="negative">
+                                                Скорее отрицательное
+                                            </div>
+                                            <div class="radiobutton-item">
+                                                <input type="radio" name="assessment" value="noanswer">
+                                                Затрудняюсь ответить
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="form-item">
+                                        <h3>Представьтесь:</h3>
+                                        <div class="name">
+                                            <div class="name-item">Имя*:<input type="text" name="username" placeholder="Петр" required></div>
+                                            <div class="name-item">Фамилия*:<input type="text" name="userlastname" placeholder="Иванов" required></div>
+                                            <div class="name-item">Отчество:<input type="text" name="patronymic" placeholder="Александрович"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="contact-information">
+                                    <h3 class="form-box-title">Контактная информация:</h3>
+                                    <div class="row">
+                                        <div class="column">
+                                            <div class="telephone-item">
+                                                Телефон*:<input type="tel" name="telephone" placeholder="Введите телефон" required>
+                                            </div>
+                                        </div>
+                                        <div class="column">
+                                            <div class="email-item">
+                                                Электронная почта*:<input type="email" name="email" placeholder="Введите e-mail" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="attractions">
+                                    <h3 class="form-box-title">посещенные <br>достопримечательности:</h3>
+                                    <div class="checkbox">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="bridge" value="yes" checked>
+                                            Мост Дьявола 
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="mountain" value="yes" checked>
+                                            Гора-Колокол
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="park" value="yes" checked>
+                                            Слайд-парк 
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" name="rock" value="yes">
+                                            Красные скалы 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="emotions">
+                                    <h3 class="form-box-title">Опишите свои эмоции:</h3>
+                                    <div class="textarea">
+                                        <textarea rows="15" wrap="hard" placeholder="Опишите подробно все свои восторги"></textarea>
+                                    </div>
+                                </div>
+                                <div class="button-box">
+                                    <div class="button">
+                                        <button type="submit">Отправить отзыв</button>
+                                    </div>
+                                    <div class="required">
+                                        <p>* — обязательные поля</p>
+                                    </div>
+                                </div>
+                        </form>
+                        <footer>
+                                <ul class="footer-nav">
+                                    <li>#visitSEDONA</li>
+                                    <li class="social-btns">
+                                        <a class="social-btn social-btn-tw" href="#"></a>
+                                        <a class="social-btn social-btn-fb" href="#"></a>
+                                        <a class="social-btn social-btn-yt" href="#"></a>
+                                    </li>
+                                    <li>Разработано</li>
+                                </ul>
+                        </footer>
+                    </div>
+            </section>
+        </div>
+        
+    </main>
+    <script src="build/js/script.js"></script>
+</body>
+</html>
